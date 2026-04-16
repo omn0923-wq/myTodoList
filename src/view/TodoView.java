@@ -72,6 +72,7 @@ public class TodoView {
         String task = sc.next();
 
         //todoService.addTodo 호출
+        todoService.addTodo(date, time, task);
         System.out.println("저장 완료!");
     }
 
