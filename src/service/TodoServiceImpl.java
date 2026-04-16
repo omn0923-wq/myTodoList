@@ -46,6 +46,6 @@ public class TodoServiceImpl implements TodoService {
 
     @Override
     public void completeTodo(String date, int index) {
-
+        todoRepository.complete(date, index);
     }
 }

@@ -134,6 +134,7 @@ public class TodoView {
         int index = sc.nextInt() - 1;
 
         // todoService.completeTodo 호출
+        todoService.completeTodo(date, index);
         System.out.println("완료 처리 완료!");
     }
 
