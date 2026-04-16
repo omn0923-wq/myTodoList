@@ -44,7 +44,9 @@ public class TodoRepositoryImpl implements TodoRepository {
 
     @Override
     public void update(String date, int index, Todo todo) {
-
+        List<Todo> list = todoMap.get(date);
+        // 리스트의 수정은 set()으로 수행
+        list.set(index, todo);
     }
 
     @Override
