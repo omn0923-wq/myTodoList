@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class TodoServiceImpl implements TodoService {
     private final TodoRepository todoRepository;
+
     public TodoServiceImpl(TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
@@ -40,7 +41,7 @@ public class TodoServiceImpl implements TodoService {
 
     @Override
     public void deleteTodo(String date, int index) {
-
+        todoRepository.delete(date, index);
     }
 
     @Override
