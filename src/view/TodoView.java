@@ -176,8 +176,9 @@ public class TodoView {
         }
 
         System.out.println("\n[" + date + "]");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println((i + 1) + ". " + list.get(i));
-        }
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println((i + 1) + ". " + list.get(i));
+//        }
+        list.forEach(x -> System.out.println(x));
     }
 }
